@@ -21,7 +21,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2 id="choose-team">Choose Your Team:</h2>
+          <h2 id="instructions">Choose Your Team:</h2>
         </div>
       </div>
       <div id="team-selection" class="row">
@@ -46,7 +46,7 @@
           <h5 class="char-health">Health: 95</h5>
         </div>
       </div>
-      <div class="row">
+      <div id="game-subheading" class="row" hidden>
         <div class="col-md-3">
           <h2>Your Team:</h2>
         </div>
@@ -54,31 +54,31 @@
           <h2>Opponents:</h2>
         </div>
       </div>
-      <div class="row">
+      <div id="opponent-selection" class="row" hidden>
         <div class="d-flex align-items-center flex-column col-md-3">
           <h4 id="player-team-name" class="char-name">Name</h4>
           <img id="player-img" src="http://via.placeholder.com/200x250"></a>
           <h5  id="player-health" class="char-health">Health: 0</h5>
         </div>
-        <div class="d-flex align-items-center flex-column col-md-3">
+        <div id="opponent1" class="d-flex align-items-center flex-column col-md-3">
           <h4 id="opponent1-name" class="char-name">Name</h4>
-          <img id="opponent1-img" src="http://via.placeholder.com/200x250"></a>
+          <img id="opponent1-img" class="opponent-img" data-div-class="opponent1" src="http://via.placeholder.com/200x250"></a>
           <h5 id="opponent1-health" class="char-health">Health: 0</h5>
         </div>
-        <div class="d-flex align-items-center flex-column col-md-3">
+        <div id="opponent2" class="d-flex align-items-center flex-column col-md-3">
           <h4 id="opponent2-name" class="char-name">Name</h4>
-          <img id="opponent2-img" src="http://via.placeholder.com/200x250"></a>
+          <img id="opponent2-img" class="opponent-img" data-div-class="opponent2" src="http://via.placeholder.com/200x250"></a>
           <h5 id="opponent2-health" class="char-health">Health: 0</h5>
         </div>
-        <div class="d-flex align-items-center flex-column col-md-3">
+        <div id="opponent3" class="d-flex align-items-center flex-column col-md-3">
           <h4 id="opponent3-name" class="char-name">Name</h4>
-          <img id="opponent3-img" src="http://via.placeholder.com/200x250"></a>
+          <img id="opponent3-img" class="opponent-img" data-div-class="opponent3" src="http://via.placeholder.com/200x250"></a>
           <h5 id="opponent3-health" class="char-health">Health: 0</h5>
         </div>
       </div>
       <div class="row">
         <div class="d-flex align-items-center flex-column col-md-12">
-          <button type="button" id="attack-button" class="btn btn-danger btn-lg">Attack</button>
+          <button type="button" id="attack-button" class="btn btn-danger btn-lg" hidden>Attack</button>
         </div>
       </div>
     </div>

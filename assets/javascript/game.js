@@ -2,10 +2,14 @@ window.onload = function() {
     $("#attack-button").click(game.attack);
 };
 
-/* Global Variables */
-var $teams = $("#team-selection");
-var startGame = false;
 
+// Global Variables
+var $teams = $("#team-selection");
+var $opponentSelection = $("#opponent-selection");
+var startGame = false;
+var opponentSel = false;
+
+// Array indices align with how teams are structured in HTML
 var allTeams = ["Toronto Maple Leafs", "Boston Bruins", "Winnipeg Jets", "Nashville Predators"];
 var allImgs = ["TML-logo-225x225.png", "BB-logo-225x225.png", "WJ-logo-225x225.png", "NP-logo-225x225.png"];
 var allHealth = [80, 90, 105, 95];
@@ -48,8 +52,16 @@ var game = {
             $("#opponent" + (i + 1) + "-health").text("Health: " + this.oppHealth[i]);
         }
 
-        $("#choose-team").hide();
+        $("#instructions").text("Select An Opponent");
         $("#team-selection").hide();
+
+        $("#game-subheading").removeAttr("hidden");
+        $("#opponent-selection").removeAttr("hidden");
+        $("#attack-button").removeAttr("hidden");
+    },
+
+    selectOpponent: function(opponent) {
+        $("#" + opponent).css("border", "1.5pt solid red");
     }
 };
 
@@ -65,4 +77,11 @@ $teams.on("click", ".team-img", function() {
     }
 });
 
+
+$opponentSelection.on("click", ".opponent-img", function () {
+    if (!opponentSel) {
+        game.selectOpponent($(this).attr("data-div-class"));
+        opponentSel = true;
+    }
+});
 
