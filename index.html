@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,28 +21,28 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h2>Choose Your Team:</h2>
+          <h2 id="choose-team">Choose Your Team:</h2>
         </div>
       </div>
-      <div class="row">
+      <div id="team-selection" class="row">
         <div class="d-flex align-items-center flex-column col-md-3">
           <h4 class="char-name">Toronto Maple Leafs</h4>
-          <img class="team-img" src="assets/images/TML-logo-225x225.png"></a>
+          <img class="team-img" data-name="Toronto Maple Leafs" data-health="80" data-img="TML-logo-225x225.png" src="assets/images/TML-logo-225x225.png"></a>
           <h5 class="char-health">Health: 80</h5>
         </div>
         <div class="d-flex align-items-center flex-column col-md-3">
           <h4 class="char-name">Boston Bruins</h4>
-          <img class="team-img" src="assets/images/BB-logo-225x225.png"></a>
+          <img class="team-img" data-name="Boston Bruins" data-health="90" data-img="BB-logo-225x225.png" src="assets/images/BB-logo-225x225.png"></a>
           <h5 class="char-health">Health: 90</h5>
         </div>
         <div class="d-flex align-items-center flex-column col-md-3">
           <h4 class="char-name">Winnipeg Jets</h4>
-          <img class="team-img" src="assets/images/WJ-logo-225x225.png"></a>
+          <img class="team-img" data-name="Winnipeg Jets" data-health="105" data-img="WJ-logo-225x225.png" src="assets/images/WJ-logo-225x225.png"></a>
           <h5 class="char-health">Health: 105</h5>
         </div>
         <div class="d-flex align-items-center flex-column col-md-3">
           <h4 class="char-name">Nashville Predators</h4>
-          <img class="team-img" src="assets/images/NP-logo-225x225.png"></a>
+          <img class="team-img" data-name="Nashville Predators" data-health="95" data-img="NP-logo-225x225.png" src="assets/images/NP-logo-225x225.png"></a>
           <h5 class="char-health">Health: 95</h5>
         </div>
       </div>
@@ -55,24 +56,24 @@
       </div>
       <div class="row">
         <div class="d-flex align-items-center flex-column col-md-3">
-          <h4 class="char-name">Name</h4>
-          <a href="https://placeholder.com"><img src="http://via.placeholder.com/200x250"></a>
-          <h5 class="char-health">Health: 0</h5>
+          <h4 id="player-team-name" class="char-name">Name</h4>
+          <img id="player-img" src="http://via.placeholder.com/200x250"></a>
+          <h5  id="player-health" class="char-health">Health: 0</h5>
         </div>
         <div class="d-flex align-items-center flex-column col-md-3">
-          <h4 class="char-name">Name</h4>
-          <a href="https://placeholder.com"><img src="http://via.placeholder.com/200x250"></a>
-          <h5 class="char-health">Health: 0</h5>
+          <h4 id="opponent1-name" class="char-name">Name</h4>
+          <img id="opponent1-img" src="http://via.placeholder.com/200x250"></a>
+          <h5 id="opponent1-health" class="char-health">Health: 0</h5>
         </div>
         <div class="d-flex align-items-center flex-column col-md-3">
-          <h4 class="char-name">Name</h4>
-          <a href="https://placeholder.com"><img src="http://via.placeholder.com/200x250"></a>
-          <h5 class="char-health">Health: 0</h5>
+          <h4 id="opponent2-name" class="char-name">Name</h4>
+          <img id="opponent2-img" src="http://via.placeholder.com/200x250"></a>
+          <h5 id="opponent2-health" class="char-health">Health: 0</h5>
         </div>
         <div class="d-flex align-items-center flex-column col-md-3">
-          <h4 class="char-name">Name</h4>
-          <a href="https://placeholder.com"><img src="http://via.placeholder.com/200x250"></a>
-          <h5 class="char-health">Health: 0</h5>
+          <h4 id="opponent3-name" class="char-name">Name</h4>
+          <img id="opponent3-img" src="http://via.placeholder.com/200x250"></a>
+          <h5 id="opponent3-health" class="char-health">Health: 0</h5>
         </div>
       </div>
       <div class="row">
