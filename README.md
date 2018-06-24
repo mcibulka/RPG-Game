@@ -1,1 +1,2 @@
 # RPG-Game
+A hockey themed RPG style game.  The objective is to defeat all opposing teams.  After each attack, the player's team 'Attack' attribute increases, while each opponent's Attack stays the same.  The player must choose the correct order in which to defeat each opposing team in order to win. 
